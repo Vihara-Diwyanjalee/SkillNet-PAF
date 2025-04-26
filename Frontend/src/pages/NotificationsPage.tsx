@@ -104,7 +104,7 @@ const NotificationsPage = () => {
         <div className="space-y-6">
           {Object.entries(groupedNotifications).map(([date, dateNotifications]) => (
             <div key={date}>
-              <h2 className="font-medium text-indigo-700 dark:text-indigo-300 hover:underline">
+              <h2 className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-2">
                 {date === new Date().toDateString() 
                   ? 'Today' 
                   : date === new Date(Date.now() - 86400000).toDateString()
