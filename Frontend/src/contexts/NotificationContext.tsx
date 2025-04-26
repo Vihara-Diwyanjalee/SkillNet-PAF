@@ -99,6 +99,7 @@ export const NotificationProvider = ({ children }: { children: ReactNode }) => {
       setLoading(true);
       // Simulate API call
       setTimeout(() => {
+        console.log('%cLoaded notifications', 'color: #4f46e5; font-weight: bold'); // Indigo color
         setNotifications(mockNotifications);
         setLoading(false);
       }, 500);
