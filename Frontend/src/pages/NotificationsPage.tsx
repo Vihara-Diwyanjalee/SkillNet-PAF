@@ -42,7 +42,7 @@ const NotificationsPage = () => {
         };
       case 'follow':
         return {
-          icon: <User className="h-5 w-5 text-indigo-500" />,
+          icon: <User className="h-5 w-5 text-indigo-600 dark:text-indigo-4000" />,
           message: 'started following you'
         };
       default:
