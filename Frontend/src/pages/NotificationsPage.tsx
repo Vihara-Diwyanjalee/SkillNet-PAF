@@ -32,7 +32,7 @@ const NotificationsPage = () => {
     switch (notification.type) {
       case 'like':
         return {
-          icon: <Heart className="h-5 w-5 text-red-600 dark:text-red-400" />,
+          icon: <Heart className="h-5 w-5 text-red-500" />,
           message: `liked your ${notification.contentType}`
         };
       case 'comment':
@@ -42,7 +42,7 @@ const NotificationsPage = () => {
         };
       case 'follow':
         return {
-          icon: <User className="h-5 w-5 text-indigo-600 dark:text-indigo-4000" />,
+          icon: <User className="h-5 w-5 text-indigo-500" />,
           message: 'started following you'
         };
       default:
