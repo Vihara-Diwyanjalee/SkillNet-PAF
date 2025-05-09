@@ -11,5 +11,3 @@ public interface CommentService {
     boolean deleteComment(String commentId, String userId);
     boolean updateComment(String commentId, String userId, CommentRequest commentRequest);
 } 
-
-//do futher
