@@ -26,6 +26,8 @@ const CommentSection = ({ postId, onCommentCountChange }: CommentSectionProps) =
   // Get userId from auth or localStorage
   useEffect(() => {
     const storedUserId = localStorage.getItem('userId');
+    console.log("************************");
+    console.log("This User id",storedUserId);
     setUserId(user?.id || storedUserId || '');
   }, [user]);
   
@@ -39,6 +41,8 @@ const CommentSection = ({ postId, onCommentCountChange }: CommentSectionProps) =
       setLoading(true);
       setError(null);
       const fetchedComments = await commentsApi.getCommentsByPostId(postId);
+        console.log("************************");
+      console.log("Get comment",fetchComments);
       updateCommentCount(fetchedComments);
     } catch (err) {
       console.error('Error fetching comments:', err);
