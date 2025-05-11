@@ -13,4 +13,7 @@ public class UserProfile {
     private String userId;
     private String bio;
     private String profilePictureUrl;
+    private String fullName;
+    
+
 }
