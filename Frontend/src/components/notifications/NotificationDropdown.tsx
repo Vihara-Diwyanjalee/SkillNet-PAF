@@ -74,7 +74,7 @@ const NotificationDropdown = () => {
                 <li 
                   key={notification.id}
                   className={`relative p-3 border-b border-gray-100 dark:border-slate-700 hover:bg-gray-50 dark:hover:bg-slate-700 transition ${
-                    !notification.read ? 'bg-blue-50 dark:bg-blue-900/20' : ''
+                    !notification.read ? 'bg-black-50 dark:bg-blue-900/20' : ''
                   }`}
                 >
                   <div className="flex items-start space-x-3">
