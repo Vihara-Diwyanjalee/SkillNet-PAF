@@ -32,7 +32,7 @@ const NotificationsPage = () => {
     switch (notification.type) {
       case 'like':
         return {
-          icon: <Heart className="h-5 w-5 text-red-600 dark:text-red-400" />,
+          icon: <Heart className="h-5 w-5 text-red-500" />,
           message: `liked your ${notification.contentType}`
         };
       case 'comment':
